@@ -1,4 +1,4 @@
-##Index to Home Assistant documentation.
+<em>Index to Home Assistant documentation</em>
 
 Updated monthly with each new update of Home Assistant (updates include broken link checks).
 
