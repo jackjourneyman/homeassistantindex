@@ -2,12 +2,6 @@
 <html>
 <head>
 
-$('body').keypress(function(e) {
-    $('#typed').append(String.fromCharCode(e.which));
-    if (!findString($('#typed').text())) {
-        $('#typed').text('');
-    }
-
 <style>
     
 body {
@@ -139,6 +133,12 @@ input[type=text] {
 let text = document.lastModified;
 document.getElementById("index").innerHTML = text;
 </script>
+
+$('body').keypress(function(e) {
+    $('#typed').append(String.fromCharCode(e.which));
+    if (!findString($('#typed').text())) {
+        $('#typed').text('');
+    }
 
 <input id="searcher" type="text" name="searcher">
 
