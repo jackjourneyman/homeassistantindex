@@ -134,11 +134,13 @@ let text = document.lastModified;
 document.getElementById("index").innerHTML = text;
 </script>
 
+<script>
 $('body').keypress(function(e) {
-    $('#typed').append(String.fromCharCode(e.which));
-    if (!findString($('#typed').text())) {
-        $('#typed').text('');
+$('#typed').append(String.fromCharCode(e.which));
+if (!findString($('#typed').text())) {
+$('#typed').text('');
     }
+</script>
 
 <input id="searcher" type="text" name="searcher">
 
