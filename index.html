@@ -86,8 +86,30 @@ input[type=text] {
   margin-right: 16px;
   font-size: 17px;
 }
+
+#spacer {
+    height:400px;
+    background-color:red;  
+}
+
+.show {
+    background-color:yellow;   
+}
+
+#typed {
+    background-color:yellow;
+    position:fixed;   
+    top:10px;
+    right:10px;
+}
     
 </style>
+
+$('body').keypress(function(e) {
+    $('#typed').append(String.fromCharCode(e.which));
+    if (!findString($('#typed').text())) {
+        $('#typed').text('');
+    }
     
 <title>Home Assistant Index</title>
     
@@ -117,6 +139,8 @@ input[type=text] {
 let text = document.lastModified;
 document.getElementById("index").innerHTML = text;
 </script>
+
+<input id="searcher" type="text" name="searcher">
 
 </aside>
     
