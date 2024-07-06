@@ -102,27 +102,10 @@ input[type=text] {
     background-color:yellow;   
 }
 
-.header {
+.site-header {
     position: fixed;
     width: 100%;
     z-index: 999
-}
-
-/* Page content */
-.content {
-  padding: 16px;
-}
-
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 102px;
 }
     
 #typed {
@@ -139,7 +122,7 @@ input[type=text] {
     
 <body>
 
-<img src="home-assistant-wordmark-with-margins-color-on-light.png" style="height:3em;" alt="Home Assistant logo">
+<div class="site-header" <img src="home-assistant-wordmark-with-margins-color-on-light.png" style="height:3em;" alt="Home Assistant logo"></div>
 
 <aside>
     
